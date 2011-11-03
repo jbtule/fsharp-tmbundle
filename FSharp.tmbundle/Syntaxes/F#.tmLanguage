@@ -313,14 +313,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>\b(new|in|as|if|then|else|elif|for|begin|end|match|with|type|inherit|true|false|null|do)\b</string>
-					<key>name</key>
-					<string>keyword.other.fsharp</string>
-				</dict>
-				<dict>
 					<key>begin</key>
-					<string>^\s*#\s*(light)\b</string>
+					<string>^\s*#\s*(light|if|else|endif|r|I|load|time|help|quit)\b</string>
 					<key>end</key>
 					<string>(\s|$)</string>
 					<key>name</key>
@@ -328,7 +322,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(\|&gt;|\-&gt;|\&lt;\-|:&gt;|:|\[|\]|\;|\||_)</string>
+					<string>\b(new|in|as|if|then|else|elif|for|begin|end|match|with|type|inherit|true|false|null|do)\b</string>
+					<key>name</key>
+					<string>keyword.other.fsharp</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(\|&gt;|\|?&gt;|\-&gt;|\&lt;\-|:&gt;|:|\[|\]|\;|\||_)</string>
 					<key>name</key>
 					<string>entity.name</string>
 				</dict>
